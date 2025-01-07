@@ -1,0 +1,17 @@
+services:
+  main:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: donhamon
+    command: uvicorn amo.server:app --host 0.0.0.0 --port 8080
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./amo:/app/amo
+      - ./config:/app/config
+      - ./core:/app/core
+      - ./services:/app/services
+      - ./utils:/app/utils
+      - ./logs:/app/logs
+      - ./photos:/app/photos

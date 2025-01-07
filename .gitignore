@@ -1,0 +1,9 @@
+/.env
+/venv/
+/__pycache__/
+/.idea/
+/amo/access_token.txt
+/amo/refresh_token.txt
+/config/talk_id.json
+/config/thread_id.json
+/services/promt.py

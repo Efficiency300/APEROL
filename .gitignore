@@ -1,9 +1,59 @@
-/.env
-/venv/
-/__pycache__/
-/.idea/
-/amo/access_token.txt
-/amo/refresh_token.txt
-/config/talk_id.json
-/config/thread_id.json
-/services/promt.py
+# Compiled source files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Python-specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# Java-specific
+target/
+*.war
+*.ear
+
+# Build directories
+dist/
+build/
+
+# Temp files
+*.tmp
+*.bak
+*.swp
+Service_Account.json
+# Config files
+.env

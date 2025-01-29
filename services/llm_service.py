@@ -3,7 +3,7 @@ from asyncio import Lock
 from openai import AsyncOpenAI
 from config.config import Config
 from pathlib import Path
-from services.promt import promt
+from services.prompt import prompt
 from utils.JsonDataBase import JSONDatabase
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -11,7 +11,7 @@ talk_id_json = f"{BASE_DIR}/config/thread_id.json"
 file_lock = Lock()
 
 db = JSONDatabase(talk_id_json)
-FULL_PROMPT = promt
+FULL_PROMPT = prompt
 async def thread(message_text: str, chat_id: str) -> list[str | dict]:
 
     try:
